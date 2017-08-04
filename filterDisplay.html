@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Welcome to Vecta Group</title>
+        <link href="css/main2.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <!-- The cycle2 plugin -->
+        <script src="http://malsup.github.com/jquery.cycle2.js"></script>
+        <script src="js/flickr.js"></script>
+
+        <script>
+            $(document).ready(function() {
+                $("#vecta_menu").highlightMenu({
+                    bgColor:'#dfe3e6',
+                    color:'#cc1c0d',
+                    hoverBgColor:'#cc1c0d',
+                    hoverColor:'#fff',
+                    linkWidth:'125px'
+                });
+                $("#tabs").tabs();
+            });
+	    </script>
+    </head>
+
+    <body>
+        <header></header>
+
+        <div class="cycle-slideshow"
+   	        data-cycle-fx="fade"
+   	        data-cycle-speed="1000"
+   	        data-cycle-pause-on-hover="true">
+            <img src="images/rotator01.jpg" width="697" height="240" alt="vProspect 2.0">
+            <img src="images/rotator02.jpg" width="697" height="240" alt="vConcert 2.0">
+            <img src="images/rotator03.jpg" width="697" height="240" alt="vRetain 1.0">
+        </div>
+
+        <nav>
+            <ul id="vecta_menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="solutions.html">Solutions</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h2>The Vecta Corp. Management Team</h2>
+		    <div id="team"></div>
+        </main>
+
+        <footer></footer>
+    </body>
+</html>
